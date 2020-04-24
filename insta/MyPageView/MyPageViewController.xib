@@ -10,8 +10,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPageViewController" customModule="insta" customModuleProvider="target">
             <connections>
                 <outlet property="myPageHeaderView" destination="3qy-ij-dIP" id="KIa-kG-k9M"/>
-                <outlet property="profileButton" destination="qvw-Np-xGa" id="ciP-HN-ajc"/>
-                <outlet property="profileImageView" destination="1uj-eB-eb7" id="Z3n-Am-GE1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,51 +25,23 @@
                         <constraint firstAttribute="height" constant="48" id="DYl-Pq-s1d"/>
                     </constraints>
                 </view>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pink2" translatesAutoresizingMaskIntoConstraints="NO" id="1uj-eB-eb7">
-                    <rect key="frame" x="30" y="132" width="120" height="120"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="120" id="6Sg-yc-Pke"/>
-                        <constraint firstAttribute="height" constant="120" id="bja-RS-h9Z"/>
-                    </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kawabata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dik-4Q-8ux">
-                    <rect key="frame" x="170" y="171" width="145" height="42"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは！よろしくお願いします。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKK-Yk-qev">
-                    <rect key="frame" x="30" y="282" width="294.5" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvw-Np-xGa">
-                    <rect key="frame" x="122.5" y="352.5" width="169" height="30"/>
-                    <state key="normal" title="プロフィールを編集する">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keJ-Ed-uuE" customClass="MypageMainView" customModule="insta" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="keJ-Ed-uuE" secondAttribute="trailing" id="0Kn-jL-R1l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="keJ-Ed-uuE" secondAttribute="bottom" id="1qv-hs-Rbb"/>
                 <constraint firstItem="3qy-ij-dIP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4CA-Ny-djf"/>
-                <constraint firstItem="qvw-Np-xGa" firstAttribute="top" secondItem="JKK-Yk-qev" secondAttribute="bottom" constant="50" id="7Hw-9N-vQJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3qy-ij-dIP" secondAttribute="trailing" id="BkM-lr-rD5"/>
-                <constraint firstItem="JKK-Yk-qev" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="D3C-Fe-xiP"/>
-                <constraint firstItem="1uj-eB-eb7" firstAttribute="top" secondItem="3qy-ij-dIP" secondAttribute="bottom" constant="40" id="FPd-DV-nYD"/>
-                <constraint firstItem="JKK-Yk-qev" firstAttribute="top" secondItem="1uj-eB-eb7" secondAttribute="bottom" constant="30" id="Q7x-gh-UvT"/>
-                <constraint firstItem="qvw-Np-xGa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WUn-C9-qCP"/>
+                <constraint firstItem="keJ-Ed-uuE" firstAttribute="top" secondItem="3qy-ij-dIP" secondAttribute="bottom" id="RB0-ED-Dpa"/>
                 <constraint firstItem="3qy-ij-dIP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ygu-fV-coc"/>
-                <constraint firstItem="Dik-4Q-8ux" firstAttribute="leading" secondItem="1uj-eB-eb7" secondAttribute="trailing" constant="20" id="gRz-8c-HvC"/>
-                <constraint firstItem="Dik-4Q-8ux" firstAttribute="top" secondItem="3qy-ij-dIP" secondAttribute="bottom" constant="79" id="j5n-Ud-45k"/>
-                <constraint firstItem="1uj-eB-eb7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="xnn-vo-4S9"/>
+                <constraint firstItem="keJ-Ed-uuE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vql-qR-DSp"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="127"/>
         </view>
     </objects>
-    <resources>
-        <image name="pink2" width="550" height="1000"/>
-    </resources>
 </document>

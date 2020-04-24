@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostMainView" customModule="insta" customModuleProvider="target">
+            <connections>
+                <outlet property="textFiled" destination="bCz-ni-VzV" id="00P-Sm-9qj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pink3" translatesAutoresizingMaskIntoConstraints="NO" id="bPJ-f8-Jdz">
+                    <rect key="frame" x="0.0" y="154" width="414" height="350"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="8oa-Za-MRo"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="キャプションを書く" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bCz-ni-VzV">
+                    <rect key="frame" x="30" y="554" width="354" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="bCz-ni-VzV" firstAttribute="top" secondItem="bPJ-f8-Jdz" secondAttribute="bottom" constant="50" id="FZT-tY-2fg"/>
+                <constraint firstItem="bPJ-f8-Jdz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="110" id="GOG-MT-HmH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bPJ-f8-Jdz" secondAttribute="trailing" id="Tsu-TJ-bMB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bCz-ni-VzV" secondAttribute="trailing" constant="30" id="apf-53-ah9"/>
+                <constraint firstItem="bCz-ni-VzV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="jh7-Gb-Wrh"/>
+                <constraint firstItem="bPJ-f8-Jdz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rep-U1-lsz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pink3" width="1280" height="719"/>
+    </resources>
+</document>

@@ -12,15 +12,12 @@ import PGFramework
 class MyPageViewController: BaseViewController {
 
     @IBOutlet weak var myPageHeaderView: HeaderView!
-    @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var profileButton: UIButton!
 }
 // MARK: - Life cycle
 extension MyPageViewController {
     override func loadView() {
         super.loadView()
         setHeaderView()
-        setLayout()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +35,7 @@ extension MyPageViewController {
         myPageHeaderView.setCenter(text: "Mypage")
     
     }
-    func setLayout(){
-        profileButton.layer.borderWidth = 1
-        profileButton.layer.borderColor = #colorLiteral(red: 1, green: 0.02800271297, blue: 0.6601671013, alpha: 1)
-        profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
-        
-    }
+
 }
 
 

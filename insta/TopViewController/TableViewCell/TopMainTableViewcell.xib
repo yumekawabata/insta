@@ -41,6 +41,7 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pink1" translatesAutoresizingMaskIntoConstraints="NO" id="Wos-w5-a4A">
                         <rect key="frame" x="0.0" y="101" width="414" height="350"/>
                         <constraints>
+                            <constraint firstAttribute="width" constant="414" id="iRq-lE-Jrr"/>
                             <constraint firstAttribute="height" constant="350" id="skf-k6-Lp7"/>
                         </constraints>
                     </imageView>

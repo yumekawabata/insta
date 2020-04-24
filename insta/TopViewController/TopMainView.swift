@@ -17,6 +17,8 @@ extension TopMainViewDelegate {
 class TopMainView: BaseView {
     weak var delegate: TopMainViewDelegate? = nil
     @IBOutlet weak var tableView: UITableView!
+    
+    var postModels: [PostModel] = [PostModel]()
 }
 // MARK: - Life cycle
 extension TopMainView {
@@ -26,16 +28,31 @@ extension TopMainView {
         
         loadTableViewCellFromXib(tableView: tableView, cellName: "TopMainTableViewcell")
         
+        loadTableViewCellFromXib(tableView: tableView, cellName: "TopMainTableViewSecondCell")
     }
 }
 // MARK: - Protocol
 extension TopMainView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return postModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TopMainTableViewcell",for: indexPath)as? TopMainTableViewcell else {return UITableViewCell()}; return cell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TopMainTableViewcell",for: indexPath)as? TopMainTableViewcell else {return UITableViewCell()}
+        
+        guard let secondCell =
+            tableView.dequeueReusableCell(withIdentifier: "TopMainTableViewSecondCell",for: indexPath)as? TopMainTableViewSecondCell else {return UITableViewCell()}
+        secondCell.updateCell(postModel: postModels[indexPath.row])
+        
+        switch indexPath.row {
+        case 0:
+            return cell
+        case 1:
+            return secondCell
+        default:
+            return secondCell
+        
+        }
     }
     
 }
@@ -53,6 +70,10 @@ extension TopMainView {
     func setDelegate(){
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    func getModel(postModels: [PostModel]){
+        self.postModels = postModels
+        tableView.reloadData()
     }
 }
 

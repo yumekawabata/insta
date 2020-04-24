@@ -14,8 +14,10 @@ extension TopMainTableViewSecondCellDelegate {
 }
 // MARK: - Property
 class TopMainTableViewSecondCell: BaseTableViewCell {
-    weak var delegate: TopMainTableViewSecondCellDelegate? = nil
-    @IBOutlet weak var topImageView: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+ 
+    
+    @IBOutlet weak var secondImageView: UIImageView!
     @IBOutlet weak var profileImageView: UIImageView!
 }
 // MARK: - Life cycle
@@ -30,8 +32,12 @@ extension TopMainTableViewSecondCell {
 }
 // MARK: - method
 extension TopMainTableViewSecondCell {
+    func updateCell(postModel: PostModel){
+        descriptionLabel.text = postModel.description
+    }
     func setLayout(){
         profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
     }
+
 }
 
