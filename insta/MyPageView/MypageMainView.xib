@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MypageMainView" customModule="insta" customModuleProvider="target">
+            <connections>
+                <outlet property="profileButton" destination="1ZG-Qq-sGz" id="ctW-XP-ZXU"/>
+                <outlet property="profileImage" destination="5ar-Ft-KA0" id="cHI-bK-1kZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pink2" translatesAutoresizingMaskIntoConstraints="NO" id="5ar-Ft-KA0">
+                    <rect key="frame" x="30" y="84" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="03b-Fg-Oj5"/>
+                        <constraint firstAttribute="width" secondItem="5ar-Ft-KA0" secondAttribute="height" multiplier="1:1" id="MlP-pZ-3Nf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kawabata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edq-6V-Q8y">
+                    <rect key="frame" x="170" y="124" width="145" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは！よろしくお願いします！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgf-ms-7J5">
+                    <rect key="frame" x="30" y="234" width="295" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZG-Qq-sGz">
+                    <rect key="frame" x="122.5" y="305" width="169" height="30"/>
+                    <state key="normal" title="プロフィールを編集する">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="5ar-Ft-KA0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="4A9-0K-R72"/>
+                <constraint firstItem="1ZG-Qq-sGz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BgI-2h-4rM"/>
+                <constraint firstItem="edq-6V-Q8y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="U0X-1H-1GS"/>
+                <constraint firstItem="zgf-ms-7J5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="cAO-Cn-JJw"/>
+                <constraint firstItem="5ar-Ft-KA0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="cbq-PC-wKv"/>
+                <constraint firstItem="1ZG-Qq-sGz" firstAttribute="top" secondItem="zgf-ms-7J5" secondAttribute="bottom" constant="50" id="hbg-db-yz2"/>
+                <constraint firstItem="zgf-ms-7J5" firstAttribute="top" secondItem="5ar-Ft-KA0" secondAttribute="bottom" constant="30" id="vgl-QQ-xRs"/>
+                <constraint firstItem="edq-6V-Q8y" firstAttribute="leading" secondItem="5ar-Ft-KA0" secondAttribute="trailing" constant="20" id="wI9-Od-Vga"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pink2" width="550" height="1000"/>
+    </resources>
+</document>
