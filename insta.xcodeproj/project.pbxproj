@@ -27,6 +27,10 @@
 		3F2189F2245026BE005F2B18 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2189F0245026BE005F2B18 /* postViewController.swift */; };
 		3F2189F3245026BE005F2B18 /* postViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2189F1245026BE005F2B18 /* postViewController.xib */; };
 		3F2189FA245125BD005F2B18 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2189F9245125BD005F2B18 /* PostModel.swift */; };
+		3FD9590F24527BE100212626 /* SecondImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9590D24527BE100212626 /* SecondImageViewController.swift */; };
+		3FD9591024527BE100212626 /* SecondImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD9590E24527BE100212626 /* SecondImageViewController.xib */; };
+		3FD9591324527C4000212626 /* SecondImageMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9591124527C4000212626 /* SecondImageMainView.swift */; };
+		3FD9591424527C4000212626 /* SecondImageMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD9591224527C4000212626 /* SecondImageMainView.xib */; };
 		3FF13EDA244EA8D80071DE9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF13ED9244EA8D80071DE9D /* AppDelegate.swift */; };
 		3FF13EDC244EA8D80071DE9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF13EDB244EA8D80071DE9D /* SceneDelegate.swift */; };
 		3FF13EE1244EA8D80071DE9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF13EDF244EA8D80071DE9D /* Main.storyboard */; };
@@ -56,6 +60,10 @@
 		3F2189F0245026BE005F2B18 /* postViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 		3F2189F1245026BE005F2B18 /* postViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = postViewController.xib; sourceTree = "<group>"; };
 		3F2189F9245125BD005F2B18 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		3FD9590D24527BE100212626 /* SecondImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondImageViewController.swift; sourceTree = "<group>"; };
+		3FD9590E24527BE100212626 /* SecondImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondImageViewController.xib; sourceTree = "<group>"; };
+		3FD9591124527C4000212626 /* SecondImageMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondImageMainView.swift; sourceTree = "<group>"; };
+		3FD9591224527C4000212626 /* SecondImageMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondImageMainView.xib; sourceTree = "<group>"; };
 		3FF13ED6244EA8D80071DE9D /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF13ED9244EA8D80071DE9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF13EDB244EA8D80071DE9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +114,7 @@
 			children = (
 				3F2189A6244EBAA3005F2B18 /* ImageViewController.swift */,
 				3F2189A7244EBAA3005F2B18 /* ImageViewController.xib */,
+				3FD9591524527C6300212626 /* SecondImage */,
 			);
 			path = ImageView;
 			sourceTree = "<group>";
@@ -149,6 +158,17 @@
 				3F2189F9245125BD005F2B18 /* PostModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3FD9591524527C6300212626 /* SecondImage */ = {
+			isa = PBXGroup;
+			children = (
+				3FD9590D24527BE100212626 /* SecondImageViewController.swift */,
+				3FD9590E24527BE100212626 /* SecondImageViewController.xib */,
+				3FD9591124527C4000212626 /* SecondImageMainView.swift */,
+				3FD9591224527C4000212626 /* SecondImageMainView.xib */,
+			);
+			path = SecondImage;
 			sourceTree = "<group>";
 		};
 		3FF13ECD244EA8D80071DE9D = {
@@ -266,9 +286,11 @@
 				3FF13EE1244EA8D80071DE9D /* Main.storyboard in Resources */,
 				3F08714224515563005E790E /* MypageMainView.xib in Resources */,
 				3F2189F3245026BE005F2B18 /* postViewController.xib in Resources */,
+				3FD9591024527BE100212626 /* SecondImageViewController.xib in Resources */,
 				3F08713A24512F51005E790E /* GoogleService-Info.plist in Resources */,
 				3F2189B3244EBB60005F2B18 /* MyPageViewController.xib in Resources */,
 				3F08713E24514EFF005E790E /* PostMainView.xib in Resources */,
+				3FD9591424527C4000212626 /* SecondImageMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +355,8 @@
 				3F08713D24514EFF005E790E /* PostMainView.swift in Sources */,
 				3F08714124515563005E790E /* MypageMainView.swift in Sources */,
 				3FF13EDC244EA8D80071DE9D /* SceneDelegate.swift in Sources */,
+				3FD9590F24527BE100212626 /* SecondImageViewController.swift in Sources */,
+				3FD9591324527C4000212626 /* SecondImageMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

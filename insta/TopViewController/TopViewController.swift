@@ -12,6 +12,8 @@ import PGFramework
 class TopViewController: BaseViewController{
     @IBOutlet weak var topHeaderView: HeaderView!
     @IBOutlet weak var topMainView: TopMainView!
+    
+    var postModels: [PostModel] = [PostModel]()
 }
 // MARK: - Life cycle
 extension TopViewController {
@@ -32,11 +34,26 @@ extension TopViewController {
 }
 // MARK: - Protocol
 extension TopViewController: TopMainViewDelegate {
-    func didselectRowAt() {
-        let imageViewController = ImageViewController()
-        navigationController?.pushViewController(imageViewController, animated: true)
-        animatorManager.navigationType = .slide_push
+    func didselectRowAt(indexPath: IndexPath) {
+        switch indexPath {
+        case [0,0]:
+            let imageViewController = ImageViewController()
+            navigationController?.pushViewController(imageViewController, animated: true)
+            animatorManager.navigationType = .slide_push
+        case [0,1]:
+            let secondImageViewController = SecondImageViewController()
+            secondImageViewController.getModel(postModel: postModels[indexPath.row])
+
+            navigationController?.pushViewController(secondImageViewController, animated: true)
+            animatorManager.navigationType = .slide_push
+        default:
+            let secondImageViewController = SecondImageViewController()
+           secondImageViewController.getModel(postModel: postModels[indexPath.row])
+            navigationController?.pushViewController(secondImageViewController, animated: true)
+            animatorManager.navigationType = .slide_push
+        }
     }
+
 }
 extension TopViewController: HeaderViewDelegate{
     func touchedRightButton(_ sender: UIButton) {
@@ -59,6 +76,9 @@ extension TopViewController {
 //            for postModel in postModels {
 //                print("DESC: ",postModel.description)
 //            }
+            
+            self.postModels = postModels
+            
             self.topMainView.getModel(postModels: postModels)
         }
         
