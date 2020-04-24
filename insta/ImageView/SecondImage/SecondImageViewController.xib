@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondImageViewController" customModule="insta" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="GPD-SK-mvt" id="eze-5m-bhM"/>
+                <outlet property="secondImageMainView" destination="Ph7-Jx-1op" id="G6d-yi-e5z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
