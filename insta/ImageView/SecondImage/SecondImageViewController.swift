@@ -42,6 +42,13 @@ extension SecondImageViewController: HeaderViewDelegate{
         navigationController?.pushViewController(topViewController, animated: true)
         animatorManager.navigationType = .slide_pop
     }
+    func touchedRightButton(_ sender: UIButton) {
+        let editViewController = EditViewController()
+        editViewController.postModel
+        = postModel
+        editViewController.modalPresentationStyle = .fullScreen
+        present(editViewController, animated: true, completion: nil)
+    }
 }
 
 // MARK: - method
@@ -53,6 +60,9 @@ extension SecondImageViewController {
     func setHeaderView(){
         headerView.setCenter(text: "詳細画面", fontSize: 16, color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
         headerView.setLeft(text: "←", fontSize: 16, color: #colorLiteral(red: 1, green: 0.02800271297, blue: 0.6601671013, alpha: 1))
+        if let image = UIImage(named:  "momo"){
+        headerView.setRight(image: image)
+            }
     }
     func getModel(postModel: PostModel){
         self.postModel = postModel
