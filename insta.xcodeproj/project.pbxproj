@@ -27,6 +27,10 @@
 		3F2189F2245026BE005F2B18 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2189F0245026BE005F2B18 /* postViewController.swift */; };
 		3F2189F3245026BE005F2B18 /* postViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2189F1245026BE005F2B18 /* postViewController.xib */; };
 		3F2189FA245125BD005F2B18 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2189F9245125BD005F2B18 /* PostModel.swift */; };
+		3F91EE2B245681BC00D2D845 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EE29245681BC00D2D845 /* EditViewController.swift */; };
+		3F91EE2C245681BC00D2D845 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F91EE2A245681BC00D2D845 /* EditViewController.xib */; };
+		3F91EE2F245681F900D2D845 /* EditMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EE2D245681F900D2D845 /* EditMainView.swift */; };
+		3F91EE30245681F900D2D845 /* EditMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F91EE2E245681F900D2D845 /* EditMainView.xib */; };
 		3FD9590F24527BE100212626 /* SecondImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9590D24527BE100212626 /* SecondImageViewController.swift */; };
 		3FD9591024527BE100212626 /* SecondImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD9590E24527BE100212626 /* SecondImageViewController.xib */; };
 		3FD9591324527C4000212626 /* SecondImageMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9591124527C4000212626 /* SecondImageMainView.swift */; };
@@ -60,6 +64,10 @@
 		3F2189F0245026BE005F2B18 /* postViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 		3F2189F1245026BE005F2B18 /* postViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = postViewController.xib; sourceTree = "<group>"; };
 		3F2189F9245125BD005F2B18 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		3F91EE29245681BC00D2D845 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		3F91EE2A245681BC00D2D845 /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		3F91EE2D245681F900D2D845 /* EditMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMainView.swift; sourceTree = "<group>"; };
+		3F91EE2E245681F900D2D845 /* EditMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditMainView.xib; sourceTree = "<group>"; };
 		3FD9590D24527BE100212626 /* SecondImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondImageViewController.swift; sourceTree = "<group>"; };
 		3FD9590E24527BE100212626 /* SecondImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondImageViewController.xib; sourceTree = "<group>"; };
 		3FD9591124527C4000212626 /* SecondImageMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondImageMainView.swift; sourceTree = "<group>"; };
@@ -160,6 +168,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3F91EE28245681A400D2D845 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				3F91EE29245681BC00D2D845 /* EditViewController.swift */,
+				3F91EE2A245681BC00D2D845 /* EditViewController.xib */,
+				3F91EE2D245681F900D2D845 /* EditMainView.swift */,
+				3F91EE2E245681F900D2D845 /* EditMainView.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
 		3FD9591524527C6300212626 /* SecondImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +211,7 @@
 		3FF13ED8244EA8D80071DE9D /* insta */ = {
 			isa = PBXGroup;
 			children = (
+				3F91EE28245681A400D2D845 /* Edit */,
 				3F2189F624512345005F2B18 /* Model */,
 				3F2189EF245026A2005F2B18 /* postView */,
 				3F2189AF244EBB51005F2B18 /* MyPageView */,
@@ -282,12 +302,14 @@
 				3FF13EE6244EA8DF0071DE9D /* LaunchScreen.storyboard in Resources */,
 				3F2189C4244EDB05005F2B18 /* TopMainTableViewSecondCell.xib in Resources */,
 				3F2189C0244EBFCF005F2B18 /* TopMainTableViewcell.xib in Resources */,
+				3F91EE30245681F900D2D845 /* EditMainView.xib in Resources */,
 				3FF13EE3244EA8DF0071DE9D /* Assets.xcassets in Resources */,
 				3FF13EE1244EA8D80071DE9D /* Main.storyboard in Resources */,
 				3F08714224515563005E790E /* MypageMainView.xib in Resources */,
 				3F2189F3245026BE005F2B18 /* postViewController.xib in Resources */,
 				3FD9591024527BE100212626 /* SecondImageViewController.xib in Resources */,
 				3F08713A24512F51005E790E /* GoogleService-Info.plist in Resources */,
+				3F91EE2C245681BC00D2D845 /* EditViewController.xib in Resources */,
 				3F2189B3244EBB60005F2B18 /* MyPageViewController.xib in Resources */,
 				3F08713E24514EFF005E790E /* PostMainView.xib in Resources */,
 				3FD9591424527C4000212626 /* SecondImageMainView.xib in Resources */,
@@ -346,8 +368,10 @@
 				3F2189B2244EBB60005F2B18 /* MyPageViewController.swift in Sources */,
 				3F2189FA245125BD005F2B18 /* PostModel.swift in Sources */,
 				3F2189BF244EBFCF005F2B18 /* TopMainTableViewcell.swift in Sources */,
+				3F91EE2F245681F900D2D845 /* EditMainView.swift in Sources */,
 				3F2189BA244EBEF2005F2B18 /* TopMainView.swift in Sources */,
 				3F2189A3244EB378005F2B18 /* TopViewController.swift in Sources */,
+				3F91EE2B245681BC00D2D845 /* EditViewController.swift in Sources */,
 				3F2189C3244EDB05005F2B18 /* TopMainTableViewSecondCell.swift in Sources */,
 				3F2189F2245026BE005F2B18 /* postViewController.swift in Sources */,
 				3FF13EDA244EA8D80071DE9D /* AppDelegate.swift in Sources */,

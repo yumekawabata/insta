@@ -48,6 +48,9 @@ extension ImageViewController {
     func setHeaderView(){
         imageHeaderView.setCenter(text: "詳細画面", fontSize: 16, color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
         imageHeaderView.setLeft(text: "←", fontSize: 16, color: #colorLiteral(red: 1, green: 0.02800271297, blue: 0.6601671013, alpha: 1))
+        if let image = UIImage(named:  "momo"){
+            imageHeaderView.setRight(image: image)
+        }
     }
     func setLayout(){
         profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
