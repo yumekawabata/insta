@@ -44,10 +44,20 @@ extension EditViewController: HeaderViewDelegate {
         
     }
 }
+extension EditViewController: EditMainViewDelegate{
+    func touchedDeleteButton() {
+        PostModel.delete(id: postModel.id) {
+            self.dismiss(animated: true,completion: nil)
+        }
+    }
+}
+
+
 // MARK: - method
 extension EditViewController {
     func setDelegate(){
         headerView.delegate = self
+        editMainView.delegate = self
     }
     func setHeaderView(){
         headerView.setLeft(text: "キャンセル")
