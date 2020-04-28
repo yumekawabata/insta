@@ -66,6 +66,13 @@ extension SecondImageViewController {
     }
     func getModel(postModel: PostModel){
         self.postModel = postModel
+        PostModel.readAt(id: postModel.id, success: { (postModel) in
+            self.postModel = postModel
+        }) {
+            let topViewController = TopViewController()
+            self.navigationController?.pushViewController(topViewController, animated: true)
+            self.animatorManager.navigationType = .slide_pop
+        }
     }
 }
 

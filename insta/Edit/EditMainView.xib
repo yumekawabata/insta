@@ -29,13 +29,22 @@
                         <constraint firstAttribute="height" constant="1" id="RrP-Oc-vHK"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmo-oJ-B7q">
+                    <rect key="frame" x="168.5" y="536" width="77" height="30"/>
+                    <state key="normal" title="投稿を削除"/>
+                    <connections>
+                        <action selector="touchedDeleteButton:" destination="-1" eventType="touchUpInside" id="8YS-L6-Ngd"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="cq5-u3-IoT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5bP-gv-zIc"/>
+                <constraint firstItem="Nmo-oJ-B7q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6dQ-uC-sbC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IhE-DN-j6L" secondAttribute="trailing" constant="30" id="Hpg-2l-MsU"/>
                 <constraint firstItem="IhE-DN-j6L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="VeH-7B-Z06"/>
                 <constraint firstItem="IhE-DN-j6L" firstAttribute="top" secondItem="cq5-u3-IoT" secondAttribute="bottom" constant="10" id="ahJ-Wa-J4C"/>
+                <constraint firstItem="Nmo-oJ-B7q" firstAttribute="top" secondItem="IhE-DN-j6L" secondAttribute="bottom" constant="60" id="fMz-yQ-YOu"/>
                 <constraint firstItem="cq5-u3-IoT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ftz-MB-tBX"/>
                 <constraint firstItem="cq5-u3-IoT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ggY-gm-a4Y"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cq5-u3-IoT" secondAttribute="trailing" constant="30" id="lo5-cz-ACC"/>
